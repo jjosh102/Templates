@@ -55,7 +55,7 @@
     ],
     "sources": [    
       {
-        "source": "./.template.base/webapp-wasm/*",
+        "source": "./.template.base/webapp-wasm",
         "include": "*.sln",
         "target": "./"
       },
