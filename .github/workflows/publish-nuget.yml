@@ -17,7 +17,7 @@ jobs:
     - name: Set VERSION variable from tag
       run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
     - name: Build
-      run: dotnet build ./src/templates.csproj --no-restore
+      run: dotnet build ./src/templates.csproj --configuration Release /p:Version=${VERSION}
     - name: Test
       run: dotnet test ./src/templates.csproj --no-build --verbosity normal
     - name: Pack
