@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.6.3</Version>
+    <PackageIcon>Nuget.png</PackageIcon>
+    <PackageType>Template</PackageType>
+    <PackageId>Obaki.Templates</PackageId>
+    <PackageTags>Blazor,Personal Templates,MudBlazor, Web App </PackageTags>
+
+    <Company>Obaki</Company>
+    <Authors>Josh J Piluden</Authors>
+    <Title>Obaki Templates</Title>
+    <Description>My pre configured personal templates.</Description>
+    <PackageProjectUrl>https://github.com/obaki102/Templates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/obaki102/Templates</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+    <None Include="..\content\Nuget.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="**\.template.base\**\*" Exclude="**\bin\**;**\obj\**;**\.vs\**" />
+    <Content Include="**\.template.config\**\*" Exclude="**\bin\**;**\obj\**;**\.vs\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+</Project>
