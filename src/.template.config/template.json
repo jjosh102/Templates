@@ -10,7 +10,7 @@
     "description": "My personal templates reflecting my preferred directory structure and settings. Framework: LTS(net6.0)",
     "identity": "Obaki.Templates",
     "groupIdentity": "Obaki.Templates",
-    "shortName": "obakitemplates",
+    "shortName": "obaki",
     "defaultName": "ObakiTemplates",
     "tags": {
       "language": "C#",
