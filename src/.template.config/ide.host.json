@@ -4,7 +4,7 @@
     "icon": "icon.png",
     "symbolInfo": [
       {       
-        "id": "Type",
+        "id": "Host",
         "name": 
         {
           "text": "Project Type"

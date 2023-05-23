@@ -16,17 +16,10 @@
       "language": "C#",
       "type": "project"
     },
-    "guids": [
-        "2150E333-8FDC-42A3-9474-1A3956D46DE8",
-        "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
-        "3709D519-E065-4C21-8EF3-B080F14A639C",
-        "B908278B-13EE-4A9B-BBB6-B1090B764BBB",
-        "A9C12D98-2365-446B-8825-98C48B385248"
-      ],
     "sourceName": "Obaki.Template",
     "preferNameDirectory": false,
     "symbols": {
-      "Type": {
+      "Host": {
         "type": "parameter",
         "datatype": "choice",
         "defaultValue": "Webapp-Wasm",
@@ -39,7 +32,7 @@
       },
       "IsWebAppWasm": {
         "type": "computed",
-        "value": "(Type == \"Webapp-Wasm\""
+        "value": "(Host == \"Webapp-Wasm\""
       },
       "skipRestore": {
         "type": "parameter",
@@ -56,13 +49,11 @@
     "sources": [    
       {
         "source": "./.template.base/webapp-wasm",
-        "include": "*.sln",
         "target": "./"
       },
       {
-        "condition": "(Type == \"Webapp-Wasm\")",
+        "condition": "(IsWebAppWasm)",
         "source": "./.template.base/webapp-wasm",
-        "include": "*.sln",
         "target": "./"
       }
     ],
