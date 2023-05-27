@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider />
+<MudThemeProvider  @bind-IsDarkMode="_isDarkMode" Theme="_theme"/>
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -25,6 +25,8 @@
 </MudLayout>
 
 @code {
+     private MudTheme _theme = DefaultTheme.ApplyTheme();
+        private bool _isDarkMode = true;
     bool _drawerOpen = true;
 
     void DrawerToggle()
