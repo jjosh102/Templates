@@ -1,13 +1,13 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "MudBlazor Team",
+    "author": "Obaki102",
     "classifications": [
       "Blazor",
       "Web",
       "Wasm"
     ],
     "name": "Obaki Templates",
-    "description": "My personal templates reflecting my preferred directory structure and settings. Framework: LTS(net6.0)",
+    "description": "My personal templates reflecting my preferred directory structure and settings. Framework: LTS(net8.0)",
     "identity": "Obaki.Templates",
     "groupIdentity": "Obaki.Templates",
     "shortName": "obaki",
