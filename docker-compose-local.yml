@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web:
+    container_name: mediatoolkit.wasm
+    hostname: mediatoolkit
+    build:
+      # Adjust the path accordingly to reflect your actual project directory.
+      dockerfile: .src/.template.base/webapp-wasm/src/Client/dockerfile
+      context: .
+    ports:
+      - "8080:80" 
+   

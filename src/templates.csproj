@@ -33,4 +33,9 @@
     <Content Include="**\.template.config\**\*" Exclude="**\bin\**;**\obj\**;**\.vs\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include=".template.base\webapp-wasm\src\Application\Features\" />
+    <Folder Include=".template.base\webapp-wasm\src\Application\Shared\" />
+  </ItemGroup>
 </Project>
