@@ -8,4 +8,4 @@ dotnet new install Obaki.Templates
 ```
 ### Usage
 ```
-dotnet new obaki --host webapp-wasm --name MyApplication
+dotnet new obaki --host webapp-wasm -o MyApplication
