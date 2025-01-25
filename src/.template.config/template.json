@@ -1,13 +1,14 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "Obaki102",
+    "author": "jjosh102",
     "classifications": [
       "Blazor",
       "Web",
-      "Wasm"
+      "Wasm",
+      "api"
     ],
     "name": "Obaki Templates",
-    "description": "My personal templates reflecting my preferred directory structure and settings. Framework: LTS(net8.0)",
+    "description": "My personal templates reflecting my preferred directory structure and settings",
     "identity": "Obaki.Templates",
     "groupIdentity": "Obaki.Templates",
     "shortName": "obaki",
@@ -27,12 +28,21 @@
           {
             "choice": "Webapp-Wasm",
             "description": "Blazor WebAssembly"
+          },
+          {
+            "choice": "Api",
+            "description": "Minimal API"
           }
+          
         ]
       },
       "IsWebAppWasm": {
         "type": "computed",
         "value": "(Host == \"Webapp-Wasm\""
+      },
+      "IsWebApi": {
+        "type": "computed",
+        "value": "(Host == \"Api\""
       },
       "skipRestore": {
         "type": "parameter",
@@ -48,7 +58,8 @@
     ],
     "sources": [    
       {
-        "source": "./.template.base/webapp-wasm",
+        "condition": "(IsWebApi)",
+        "source": "./.template.base/api",
         "target": "./"
       },
       {
@@ -116,7 +127,7 @@
             "text": "Run 'dotnet restore'"
           }
         ],
-        "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+        "actionId": "210D431B-A78A-4D2F-B762-4ED3E3EA9025",
         "continueOnError": true
       }
     ]
