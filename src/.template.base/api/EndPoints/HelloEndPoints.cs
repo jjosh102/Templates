@@ -4,7 +4,7 @@ namespace Api.Endpoints;
 
 public class HelloEndpoints : IEndpoint
 {
-    private const string tag = "Hello";
+    private const string Tag = "Hello";
 
     public void MapEndpoint(IEndpointRouteBuilder app)
     {
